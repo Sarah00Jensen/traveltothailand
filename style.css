@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Sarabun&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+header {
+    background-color: #c62828;
+    color: #fff8e1;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Philosopher', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff8e1;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #ffd54f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card::before {
+    content: '🛕';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5rem;
+}
+
+.card h2 {
+    font-family: 'Philosopher', serif;
+    color: #c62828;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card img {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+footer {
+    background-color: #c62828;
+    color: #fff8e1;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+.imagem-historia {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.imagem-card {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffd54f;
+    transition: transform 0.3s ease;
+}
+
+.imagem-card:hover {
+    transform: scale(1.02);
+}
+.imagem-card {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffd54f;
+    transition: transform 0.3s ease;
+}
+
+.imagem-card:hover {
+    transform: scale(1.02);
+}
+/* IMAGEM CENTRALIZADA E ESTILIZADA */
+#imagem-contato {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTAINER DO FORMULÁRIO */
+.contato-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fffdf3;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULO */
+.contato-container h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+/* FORMULÁRIO */
+.contato-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contato-container input,
+.contato-container textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* BOTÃO */
+.contato-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contato-container button:hover {
+    background-color: #a51d1d;
+}
+/* CARD PADRÃO */
+.card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffdf3;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULOS DENTRO DO CARD */
+.card h2 {
+    color: #c62828;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* FORMULÁRIO */
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.card input,
+.card textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+/* BOTÃO */
+.card button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #a51d1d;
+}
+
+.card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00796b;
+}
+
+.card-restaurante {
+    text-align: center; /* Centraliza o conteúdo dentro do card */
+    margin-bottom: 40px;
+}
+
+.card-restaurante h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagem-card {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-restaurante h3 {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
