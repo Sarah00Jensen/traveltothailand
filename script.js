@@ -1,4 +1,4 @@
-document.getElementById("imagem").addEventListener("mouseover", function() {
+document.getElementById("imagem-contato").addEventListener("mouseover", function() {
     let imagemAtual = this.getAttribute("src");
 
     if (imagemAtual === "foto01.jpg") {
@@ -11,7 +11,7 @@ document.getElementById("imagem").addEventListener("mouseover", function() {
 document.querySelector("form").addEventListener("submit", function (event) {
     const nome = document.getElementById("nome").value.trim();
     const email = document.getElementById("email").value.trim();
-    const mensagem = document.getElementById("pergunta").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
 
     if (!nome || !email || !mensagem) {
         alert("Por favor, preencha todos os campos!");
@@ -21,7 +21,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     }
 });
 
-document.getElementById("titulo").addEventListener("click", function () {
+document.getElementById("sugestao").addEventListener("click", function () {
     if (this.style.color === "blue") {
         this.style.color = "black"; // Volta para preto
     } else {
